@@ -5,6 +5,8 @@
  */
 package doublets;
 
+import java.util.Vector;
+
 /**
  *
  * @author Angelo
@@ -15,7 +17,9 @@ public class Doublets {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        LireFichier lf = new LireFichier("mots.txt");
+        Graphe graphe = new Graphe(lf.getListeMots());
+        System.out.println(graphe);
     }
     
 }
